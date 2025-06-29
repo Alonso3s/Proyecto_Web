@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Golfito</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>Contáctenos</h1>
+  </header>
+
+  <section id="contacto">
+    <form id="formContacto">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensajeEstado"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Turismo Golfito</p>
+  </footer>
+
+  <script>
+    // Inicializa EmailJS con tu PUBLIC KEY (no la private)
+    emailjs.init("_txcPqjRuvd89pBMi");
+
+    // Lógica de envío del formulario
+    document.getElementById("formContacto").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const nombre = document.getElementById("nombre").value.trim();
+      const correo = document.getElementById("correo").value.trim();
+      const asunto = document.getElementById("asunto").value.trim();
+      const mensaje = document.getElementById("mensaje").value.trim();
+      const estado = document.getElementById("mensajeEstado");
+
+      // Validación simple
+      if (!nombre || !correo || !asunto || !mensaje) {
+        estado.textContent = "Por favor, completa todos los campos.";
+        estado.style.color = "red";
+        return;
+      }
+
+      if (!/\S+@\S+\.\S+/.test(correo)) {
+        estado.textContent = "Correo inválido.";
+        estado.style.color = "red";
+        return;
+      }
+
+      // Enviar con EmailJS
+      emailjs.send("service_35i42uu", "template_f6gd97o", {
+        from_name: nombre,
+        from_email: correo,
+        subject: asunto,
+        message: mensaje
+      })
+        .then(() => {
+          estado.textContent = "Mensaje enviado correctamente.";
+          estado.style.color = "green";
+          document.getElementById("formContacto").reset();
+          setTimeout(() => {
+            estado.textContent = "";
+          }, 5000);
+        })
+
+        .catch((error) => {
+          estado.textContent = "Error al enviar. Intenta nuevamente.";
+          estado.style.color = "red";
+          console.error("Error EmailJS:", error);
+        });
+    });
+  </script>
+</body>
+
+</html>
