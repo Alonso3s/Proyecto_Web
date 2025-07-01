@@ -1,0 +1,357 @@
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+.ToursDestacados {
+  padding: 4rem 1rem;
+  background: #ffffff; 
+  text-align: center;
+}
+
+
+.ToursDestacados h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.ToursDestacados .subtitulo {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* Grid adaptativo */
+.ToursDestacados .gridcards {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(1, minmax(250px, 1fr));
+}
+
+@media (min-width: 600px) {
+  .ToursDestacados .gridcards {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .ToursDestacados .gridcards {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+  }
+}
+
+
+.ToursDestacados .gridcard {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.ToursDestacados .cardimagen {
+  position: relative;
+  width: 100%;
+  height: 180;
+  background: #ddd; 
+}
+.ToursDestacados .cardimagen img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ToursDestacados .cardimagen .categoria {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.ToursDestacados .categoria.naturaleza  {
+    background: #27ae60; 
+}
+.ToursDestacados .categoria.aventura    { 
+    background: #e67e22; 
+}
+.ToursDestacados .categoria.playas      { 
+    background: #3498db;
+}
+
+/* Hacer que todo el <a> ocupe la tarjeta y herede estilos */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-icon {
+  width: 48px;     
+  height: 48px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.card-link:hover .card {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.ToursDestacados .contenidocard {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ToursDestacados .contenidocard h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+.ToursDestacados .contenidocard p {
+  font-size: 0.9rem;
+  color: #555;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+
+.ToursDestacados .infocard {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #777;
+}
+.ToursDestacados .infocard span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+
+.ComoLlegar {
+  background-color: #e8f4f8;
+  padding: 40px 20px;
+}
+.ComoLlegar h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.ComoLlegar p {
+text-align: center;
+}
+.transporte-mapa-container {
+  display:flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.transporte-opciones {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 360px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.transporte-opciones h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.transporte-card {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.transporte-card:last-child {
+  margin-bottom: 0;
+}
+.icono {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.azul { background-color: #6699ff; }
+.verde { background-color: #95e6b5; }
+.naranja { background-color: #fcb68c; }
+.transporte-card h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.transporte-card p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #333333;
+}
+.mapa-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mapa {
+  width: 300px;
+  height: 320px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.btn-googlemaps {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 24px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: background-color .2s;
+}
+.btn-googlemaps:hover {
+  background-color: #222;
+}
+
+/* Footer */
+.footer {
+  background-color: #101E2B;
+  color: white;
+  padding: 40px 20px 20px;
+  font-size: 14px;
+}
+
+.footer-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-nav,
+.footer-links,
+.footer-contacto {
+  min-width: 150px;
+}
+
+.footer h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-contacto p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #bbb;
+}
+.grey {
+  color: #9b9999;
+}
+.categorias {
+  padding: 4rem 1rem;
+  background: #e8f4f8;     /* mismo fondo que el resto */
+  text-align: center;       /* centrar título y subtítulo */
+}
+
+/* Título y subtítulo */
+.categorias h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.categorias .subtitulo {
+  color: #555555;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Grid de 4 tarjetas en fila */
+.categorias .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;                /* espacio entre tarjetas */
+  max-width: 1200px;
+  margin: 0 auto;           /* centra el grid */
+}
+
+/* Cada tarjeta rellena su celda */
+.categorias .card-link,
+.categorias .card {
+  width: 100%;
+}
+
+/* Estilos generales de la tarjeta */
+.categorias .card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;     /* 32px arriba/abajo, 24px lados */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform .2s, box-shadow .2s;
+}
+.categorias .card-link:hover .card {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Icono SVG o IMG dentro de la tarjeta */
+.categorias .card-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+/* Título y texto de la tarjeta */
+.categorias .card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.categorias .card p {
+  font-size: 0.9rem;
+  color: #666666;
+}
