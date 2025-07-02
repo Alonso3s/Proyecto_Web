@@ -1,352 +1,417 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>GOLFO TOURS</title>
-        <meta charset="UTF-8">
-        <!--fuente del FIGMA-->
-         <link  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> <!--importado -> como_llegar.html-->
-         <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    </head>
+  <head>
+    <title>GOLFO TOURS</title>
+    <meta charset="UTF-8" />
+    <!--fuente del FIGMA-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!--importado -> como_llegar.html-->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <script src="js/logout.js"></script>
+  </head>
 
-    <body>
-        <header>
-            <nav>
-                <div class="hero-banner-fondo">
-                   <h1>GOLFITO</h1>
-                </div>
-                <!-- Barra de navegación-->
-                <ul id="menu">
-                    <li><a href="indexgolfo.html" class="item">Inicio</a></li>
-                    <li><a href="contacto.html" class="item">Contacto</a></li>
-                    <li><a href="registrarse.html" class="itemx">Registrarse</a></li>
-                    <li><a href="iniciar_sesion.html" class="itemx">Iniciar Sesión</a></li>
-                </ul>
-            </nav>
-        </header>
+  <body>
+    <header>
+      <nav>
+        <div class="hero-banner-fondo">
+          <h1>GOLFITO</h1>
+        </div>
+        <!-- Barra de navegación-->
+        <ul id="menu">
+          <li><a href="indexgolfo.html" class="item">Inicio</a></li>
+          <li><a href="contacto.html" class="item">Contacto</a></li>
+          <li><a href="registrarse.html" class="itemx">Registrarse</a></li>
+          <li><a href="Login.html" class="itemx">Iniciar Sesión</a></li>
+          <li><a href="#" id="cerrarSesion" class="item">Cerrar Sesión</a></li>
 
-        <section class="hero">
-                <!--banner entrada-->
-                <h2>Descubre Golfito</h2>
-                <p>El paraíso natural del Golfo Dulce te espera con aventuras inolvidables</p>
+        </ul>
+      </nav>
+    </header>
 
-                <div class="OpcionesHero">
-                    <a href="#ToursDestacados" class="btn-explorar"> Explorar Tours</a>
-                    <a href="#ComoLlegar" class="btn-como-llegar"> Cómo Llegar</a>
-                </div>
-        </section>
+    <section class="hero">
+      <!--banner entrada-->
+      <h2>Descubre Golfito</h2>
+      <p>
+        El paraíso natural del Golfo Dulce te espera con aventuras inolvidables
+      </p>
 
-<section>
-  <div class="categorias">
-    <h2>Actividades por Categoría</h2>
-    <p class="subtitulo">
-      Explora las diferentes experiencias que Golfito tiene para ofrecerte
-    </p>
-
-    <div class="cards">
-      <a href="Naturaleza.html" class="card-link">
-        <article class="card">
-          <img src="/img/naturalezaicon.png" alt="Icono Naturaleza" class="card-icon">
-          <h3>Naturaleza</h3>
-          <p>Explora la biodiversidad única del Golfo Dulce</p>
-        </article>
-      </a>
-
-      <a href="Aventura.html" class="card-link">
-        <article class="card">
-          <img src="/img/aventuraicon.png" alt="Icono Aventura" class="card-icon">
-          <h3>Aventura</h3>
-          <p>Vive experiencias emocionantes a lo natural</p>
-        </article>
-      </a>
-
-      <a href="Playas.html" class="card-link">
-        <article class="card">
-          <img src="/img/playaicon.png" alt="Icono Playas" class="card-icon">
-          <h3>Playas</h3>
-          <p>Descubre las mejores playas de Golfito</p>
-        </article>
-      </a>
-
-      <a href="Historia.html" class="card-link">
-        <article class="card">
-          <img src="/img/historiaicon.png" alt="Icono Historia" class="card-icon">
-          <h3>Historia</h3>
-          <p>Conoce la historia y la cultura local</p>
-        </article>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="carrusel">
-    <h1>Imagenes Destacadas</h1>
-    <p class="subtitulo">
-      Aquí falta el subtítulo y falta el carrusel de imágenes❕❕
-    </p>
-</section>
-
-        <section class="ToursDestacados" id="ToursDestacados">
-            <h1>Tours Destacados</h1>
-            <p class="subtitulo">
-                Descubre la belleza natural de Golfito
-            </p> 
-            <div class="gridcards">
-
-     <!-- Prueba grid -->
-     <article class="gridcard">
-      <div class="cardimagen">
-        <img src="" alt="">
-        <span class="categoria naturaleza">Naturaleza</span>
+      <div class="OpcionesHero">
+        <a href="#ToursDestacados" class="btn-explorar"> Explorar Tours</a>
+        <a href="#ComoLlegar" class="btn-como-llegar"> Cómo Llegar</a>
       </div>
-      <div class="contenidocard">
-        <h3>Avistamiento de Ballenas</h3>
-        <p>Observa ballenas jorobadas en su hábitat natural</p>
-        <div class="infocard">
-          <span> 4 horas</span>
-          <span> 2-12 </span>
-          <span> 4.9</span>
+    </section>
+
+    <section>
+      <div class="categorias">
+        <h2>Actividades por Categoría</h2>
+        <p class="subtitulo">
+          Explora las diferentes experiencias que Golfito tiene para ofrecerte
+        </p>
+
+        <div class="cards">
+          <a href="Naturaleza.html" class="card-link">
+            <article class="card">
+              <img
+                src="/img/naturalezaicon.png"
+                alt="Icono Naturaleza"
+                class="card-icon"
+              />
+              <h3>Naturaleza</h3>
+              <p>Explora la biodiversidad única del Golfo Dulce</p>
+            </article>
+          </a>
+
+          <a href="Aventura.html" class="card-link">
+            <article class="card">
+              <img
+                src="/img/aventuraicon.png"
+                alt="Icono Aventura"
+                class="card-icon"
+              />
+              <h3>Aventura</h3>
+              <p>Vive experiencias emocionantes a lo natural</p>
+            </article>
+          </a>
+
+          <a href="Playas.html" class="card-link">
+            <article class="card">
+              <img
+                src="/img/playaicon.png"
+                alt="Icono Playas"
+                class="card-icon"
+              />
+              <h3>Playas</h3>
+              <p>Descubre las mejores playas de Golfito</p>
+            </article>
+          </a>
+
+          <a href="Historia.html" class="card-link">
+            <article class="card">
+              <img
+                src="/img/historiaicon.png"
+                alt="Icono Historia"
+                class="card-icon"
+              />
+              <h3>Historia</h3>
+              <p>Conoce la historia y la cultura local</p>
+            </article>
+          </a>
         </div>
       </div>
-    </article>
+    </section>
 
-    <!-- 2 -->
-    <article class="gridcard">
-      <div class="cardimagen">
-        <img src="" alt="">
-        <span class="categoria aventura">Aventura</span>
-      </div>
-      <div class="contenidocard">
-        <h3>Canopy</h3>
-        <p>Aventura extrema entre las copas de los árboles</p>
-        <div class="infocard">
-          <span> 4 horas</span>
-          <span> 2-12 </span>
-          <span> 4.9</span>
-        </div>
-      </div>
-    </article>
+    <section class="carrusel">
+      <h2>Imágenes Destacadas</h2>
+      <p class="subtitulo">Descubre la belleza natural de Golfito</p>
 
-    <!-- 3 -->
-    <article class="gridcard">
-      <div class="cardimagen">
-        <img src="" alt="">
-        <span class="categoria playas">Playas</span>
-      </div>
-      <div class="contenidocard">
-        <h3>Playa Zancudo</h3>
-        <p>Relájate en una de las playas más hermosas de Golfito</p>
-        <div class="infocard">
-          <span> 4 horas</span>
-          <span> 2-12 </span>
-          <span> 4.9</span>
-        </div>
-      </div>
-    </article>
+      <div class="carrusel-container">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
 
-    <!-- 4 -->
-    <article class="gridcard">
-      <div class="cardimagen">
-        <img src="" alt="">
-        <span class="categoria naturaleza">Naturaleza</span>
-      </div>
-      <div class="contenidocard">
-        <h3>Parque Nacional Piedras Blancas</h3>
-        <p>Descubre las diferentes especies de nuestro bosque tropical</p>
-        <div class="infocard">
-          <span> 4 horas</span>
-          <span> 2-12 </span>
-          <span> 4.9</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- 5 -->
-    <article class="gridcard">
-      <div class="cardimagen">
-        <img src="" alt="">
-        <span class="categoria aventura">Aventura</span>
-      </div>
-      <div class="contenidocard">
-        <h3>Kayak en Manglares</h3>
-        <p>Explora los manglares en kayak</p>
-        <div class="infocard">
-          <span> 4 horas</span>
-          <span> 2-12 </span>
-          <span> 4.9</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- 6 -->
-    <article class="gridcard">
-      <div class="cardimagen">
-        <img src="" alt="">
-        <span class="categoria playas">Playas</span>
-      </div>
-      <div class="contenidocard">
-        <h3>Playa Pavones</h3>
-        <p>Perfecta para surfear, es la segunda más larga del mundo</p>
-        <div class="infocard">
-          <span> 4 horas</span>
-          <span> 2-12 </span>
-          <span> 4.9</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- 7 -->
-    <article class="gridcard">
-      <div class="cardimagen">
-        <img src="" alt="">
-        <span class="categoria naturaleza">Naturaleza</span>
-      </div>
-      <div class="contenidocard">
-        <h3>Observación de Aves</h3>
-        <p>Descubre más de 400 especies de aves</p>
-        <div class="infocard">
-          <span> 4 horas</span>
-          <span> 2-12 </span>
-          <span> 4.9</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- 8 -->
-    <article class="gridcard">
-      <div class="cardimagen">
-        <img src="" alt="">
-        <span class="categoria aventura">Aventura</span>
-      </div>
-      <div class="contenidocard">
-        <h3>Cascadas</h3>
-        <p>Caminata a las impresionantes cascadas</p>
-        <div class="infocard">
-          <span> 4 horas</span>
-          <span> 2-12 </span>
-          <span> 4.9</span>
-        </div>
-      </div>
-    </article>
-
-    <!-- 9 -->
-    <article class="gridcard">
-      <div class="cardimagen">
-        <img src="" alt="">
-        <span class="categoria aventura">Aventura</span>
-      </div>
-      <div class="contenidocard">
-        <h3>Pesca deportiva</h3>
-        <p>Oportunidades de pesca excepcionales para todos</p>
-        <div class="infocard">
-          <span> 4 horas</span>
-          <span> 2-12 </span>
-          <span> 4.9</span>
-        </div>
-      </div>
-    </article>
+        <div class="slides">
+          <div class="slide s1">
+            <img src="img/Ballenas.jpg" alt="Avistamiento de ballenas" />
+            <div class="texto-slide">
+              <h3>Avistamiento de ballenas</h3>
+              <p>Observa ballenas jorobadas en su migración anual</p>
             </div>
-        </section>
+          </div>
+          <div class="slide s2">
+            <img src="img/playa.jpg" alt="Playa Pavones" />
+            <div class="texto-slide">
+              <h3>Playa Pavones</h3>
+              <p>Perfecta para surfear, es la segunda más larga del mundo</p>
+            </div>
+          </div>
+          <div class="slide s3">
+            <img src="img/cascada.jpg" alt="Cascadas escondidas" />
+            <div class="texto-slide">
+              <h3>Cascadas escondidas</h3>
+              <p>Explora senderos hasta cascadas impresionantes</p>
+            </div>
+          </div>
+          
+        </div>
 
-        <section class="ComoLlegar" id="ComoLlegar">
-  <h1>Cómo llegar</h1>
-  <p>Encuentra la mejor ruta para llegar a Golfito y comenzar tu aventura</p>
-
-  <div class="transporte-mapa-container">
-    <!-- Tarjeta de Opciones de Transporte -->
-    <div class="transporte-opciones">
-      <h2>Opciones de Transporte</h2>
-      <div class="transporte-card">
-        <div class="icono azul"></div>
-        <div>
-          <h4>Por carretera</h4>
-          <p>Desde San José: 6 horas por la Ruta 2 (Carretera Interamericana)</p>
+        <!-- Navegación manual -->
+        <div class="navegacion-manual">
+          <label for="slide1" class="manual-btn"></label>
+          <label for="slide2" class="manual-btn"></label>
+          <label for="slide3" class="manual-btn"></label>
         </div>
       </div>
-      <div class="transporte-card">
-        <div class="icono verde"></div>
-        <div>
-          <h4>Por carretera</h4>
-          <p>Vuelos diarios desde San José al Aeropuerto de Golfito (45 minutos)</p>
+    </section>
+
+    <section class="ToursDestacados" id="ToursDestacados">
+      <h1>Tours Destacados</h1>
+      <p class="subtitulo">Descubre la belleza natural de Golfito</p>
+      <div class="gridcards">
+        <!-- Prueba grid -->
+        <article class="gridcard">
+          <div class="cardimagen">
+            <img src="" alt="" />
+            <span class="categoria naturaleza">Naturaleza</span>
+          </div>
+          <div class="contenidocard">
+            <h3>Avistamiento de Ballenas</h3>
+            <p>Observa ballenas jorobadas en su hábitat natural</p>
+            <div class="infocard">
+              <span> 4 horas</span>
+              <span> 2-12 </span>
+              <span> 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="gridcard">
+          <div class="cardimagen">
+            <img src="" alt="" />
+            <span class="categoria aventura">Aventura</span>
+          </div>
+          <div class="contenidocard">
+            <h3>Canopy</h3>
+            <p>Aventura extrema entre las copas de los árboles</p>
+            <div class="infocard">
+              <span> 4 horas</span>
+              <span> 2-12 </span>
+              <span> 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="gridcard">
+          <div class="cardimagen">
+            <img src="" alt="" />
+            <span class="categoria playas">Playas</span>
+          </div>
+          <div class="contenidocard">
+            <h3>Playa Zancudo</h3>
+            <p>Relájate en una de las playas más hermosas de Golfito</p>
+            <div class="infocard">
+              <span> 4 horas</span>
+              <span> 2-12 </span>
+              <span> 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="gridcard">
+          <div class="cardimagen">
+            <img src="" alt="" />
+            <span class="categoria naturaleza">Naturaleza</span>
+          </div>
+          <div class="contenidocard">
+            <h3>Parque Nacional Piedras Blancas</h3>
+            <p>Descubre las diferentes especies de nuestro bosque tropical</p>
+            <div class="infocard">
+              <span> 4 horas</span>
+              <span> 2-12 </span>
+              <span> 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="gridcard">
+          <div class="cardimagen">
+            <img src="" alt="" />
+            <span class="categoria aventura">Aventura</span>
+          </div>
+          <div class="contenidocard">
+            <h3>Kayak en Manglares</h3>
+            <p>Explora los manglares en kayak</p>
+            <div class="infocard">
+              <span> 4 horas</span>
+              <span> 2-12 </span>
+              <span> 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="gridcard">
+          <div class="cardimagen">
+            <img src="" alt="" />
+            <span class="categoria playas">Playas</span>
+          </div>
+          <div class="contenidocard">
+            <h3>Playa Pavones</h3>
+            <p>Perfecta para surfear, es la segunda más larga del mundo</p>
+            <div class="infocard">
+              <span> 4 horas</span>
+              <span> 2-12 </span>
+              <span> 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="gridcard">
+          <div class="cardimagen">
+            <img src="" alt="" />
+            <span class="categoria naturaleza">Naturaleza</span>
+          </div>
+          <div class="contenidocard">
+            <h3>Observación de Aves</h3>
+            <p>Descubre más de 400 especies de aves</p>
+            <div class="infocard">
+              <span> 4 horas</span>
+              <span> 2-12 </span>
+              <span> 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="gridcard">
+          <div class="cardimagen">
+            <img src="" alt="" />
+            <span class="categoria aventura">Aventura</span>
+          </div>
+          <div class="contenidocard">
+            <h3>Cascadas</h3>
+            <p>Caminata a las impresionantes cascadas</p>
+            <div class="infocard">
+              <span> 4 horas</span>
+              <span> 2-12 </span>
+              <span> 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="gridcard">
+          <div class="cardimagen">
+            <img src="" alt="" />
+            <span class="categoria aventura">Aventura</span>
+          </div>
+          <div class="contenidocard">
+            <h3>Pesca deportiva</h3>
+            <p>Oportunidades de pesca excepcionales para todos</p>
+            <div class="infocard">
+              <span> 4 horas</span>
+              <span> 2-12 </span>
+              <span> 4.9</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="ComoLlegar" id="ComoLlegar">
+      <h1>Cómo llegar</h1>
+      <p>
+        Encuentra la mejor ruta para llegar a Golfito y comenzar tu aventura
+      </p>
+
+      <div class="transporte-mapa-container">
+        <!-- Tarjeta de Opciones de Transporte -->
+        <div class="transporte-opciones">
+          <h2>Opciones de Transporte</h2>
+          <div class="transporte-card">
+            <div class="icono azul"></div>
+            <div>
+              <h4>Por carretera</h4>
+              <p>
+                Desde San José: 6 horas por la Ruta 2 (Carretera Interamericana)
+              </p>
+            </div>
+          </div>
+          <div class="transporte-card">
+            <div class="icono verde"></div>
+            <div>
+              <h4>Por carretera</h4>
+              <p>
+                Vuelos diarios desde San José al Aeropuerto de Golfito (45
+                minutos)
+              </p>
+            </div>
+          </div>
+          <div class="transporte-card">
+            <div class="icono naranja"></div>
+            <div>
+              <h4>Por carretera</h4>
+              <p>Autobuses directos desde Terminal Tracopa en San José</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="mapa-contenedor">
+          <div id="mapa"></div>
+          <a
+            class="btn-googlemaps"
+            href="https://www.google.com/maps/search/?api=1&query=8.6381,-83.1609"
+            target="_blank"
+            rel="noopener"
+          >
+            Abrir en Google Maps
+          </a>
         </div>
       </div>
-      <div class="transporte-card">
-        <div class="icono naranja"></div>
-        <div>
-          <h4>Por carretera</h4>
-          <p>Autobuses directos desde Terminal Tracopa en San José</p>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-contenido">
+        <div class="footer-logo">
+          <img src="img/logo.png" height="130" alt="Explora Golfo Dulce" />
+        </div>
+        <div class="footer-nav">
+          <h4 class="grey">Navegación</h4>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Actividades</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 class="grey">Enlaces rápidos</h4>
+          <ul>
+            <li><a href="#">Atractivos</a></li>
+            <li><a href="#">Galería</a></li>
+          </ul>
+        </div>
+        <div class="footer-contacto">
+          <h4 class="grey">Contacto</h4>
+          <p>
+            <strong>123 Calle Principal</strong><br />Golfito, Costa Rica<br />+506
+            1234 5678
+          </p>
         </div>
       </div>
-    </div>
-
-    <!-- Mapa -->
-    <div class="mapa-contenedor">
-      <div id="mapa"></div>
-      <a
-        class="btn-googlemaps"
-        href="https://www.google.com/maps/search/?api=1&query=8.6381,-83.1609"
-        target="_blank"
-        rel="noopener"
-      >
-        Abrir en Google Maps
-      </a>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-   <div class="footer-contenido">
-    <div class="footer-logo">
-      <img src="img/logo.png" height="130" alt="Explora Golfo Dulce">
-    </div>
-    <div class="footer-nav">
-      <h4 class="grey">Navegación</h4>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Actividades</a></li>
-      </ul>
-    </div>
-    <div class="footer-links">
-      <h4 class="grey">Enlaces rápidos</h4>
-      <ul>
-        <li><a href="#">Atractivos</a></li>
-        <li><a href="#">Galería</a></li>
-      </ul>
-    </div>
-    <div class="footer-contacto">
-      <h4 class="grey">Contacto</h4>
-      <p><strong>123 Calle Principal</strong><br>Golfito, Costa Rica<br>+506 1234 5678</p>
-    </div>
-  </div>
-  <div class="footer-copy">
-    <p>© 2025 Explora Golfo Dulce. Todos los derechos reservados.</p>
-  </div> 
-</footer>
-        
+      <div class="footer-copy">
+        <p>© 2025 Explora Golfo Dulce. Todos los derechos reservados.</p>
+      </div>
+    </footer>
 
     <!-- Script de Leaflet -->
-        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-  <script>
-    // Coordenadas de Golfito
-    const coordenadasGolfito = [8.6381, -83.1609];
+    <script>
+      // Coordenadas de Golfito
+      const coordenadasGolfito = [8.6381, -83.1609];
 
-    // Inicializa el mapa
-    const mapa = L.map('mapa').setView(coordenadasGolfito, 13);
+      // Inicializa el mapa
+      const mapa = L.map("mapa").setView(coordenadasGolfito, 13);
 
-    // Capa base (tiles)
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(mapa);
+      // Capa base (tiles)
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(mapa);
 
-    // Marcador
-    L.marker(coordenadasGolfito)
-      .addTo(mapa)
-      .bindPopup('Golfito, Puntarenas')
-      .openPopup();
-  </script>
-
-    </body>
+      // Marcador
+      L.marker(coordenadasGolfito)
+        .addTo(mapa)
+        .bindPopup("Golfito, Puntarenas")
+        .openPopup();
+    </script>
+  </body>
 </html>

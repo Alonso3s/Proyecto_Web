@@ -1,144 +1,6 @@
-/* estilo básico */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
   font-family: 'Poppins', sans-serif;
 }
-.hero-banner-fondo {
-  position: relative;
-  width: 100%;
-  height: 30vh;
-
-  background: url("../img/banner.jpg") no-repeat center/cover;
-}
-
-body {
-  width: 100vw;
-  overflow-x: hidden;
-}
-
-.hero-banner-fondo h1 {
-  position:relative;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 3rem;
-  margin-left: 20px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-}
-#menu {
-  list-style: none;
-  display: flex;
-  gap: 3rem;
-  padding: 0.5rem 1.25rem;
-  background: #fff; 
-  justify-content: flex-end
-}
-
-#menu .item {
-  display: inline-block;
-  padding: 0.5rem 1.25rem;
-  border-radius: 1.5rem;
-  font-weight: 500;
-  text-decoration: none;
-}
-#menu .itemx {
-  display: inline-block;
-  padding: 0.5rem 1.25rem;
-  border-radius: 1.5rem;
-  font-weight: 500;
-  text-decoration: none;
-}
-/* Estilos específicos */
-#menu .item{
-  background: #000000;
-  color: #fff;
-}
-#menu .itemx{
-  background: #1a1a8d;
-  color: #fff;
-}
-
-/* Hover */
-#menu .item:hover {
-  opacity: 0.85;
-}
-
-/* HERO BANNER */
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  /* desvanecido de background */
-  background: linear-gradient(90deg, #0c2e6a 0%, #2d6a4f 100%);
-  width: 100vw;
-  height: 100vh;
-  color: #fff;
-  padding: 0 1rem;
-}
-.hero-naturaleza {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(90deg, #0c2e6a 0%, #2d6a4f 100%);
-  width: 100vw;
-  height: 50vh;
-  color: #fff;
-  padding: 0 1rem;
-}
-
-/* Titulares */
-.hero h2 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-.hero p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-}
-
-/* Botones */
-.OpcionesHero {
-  display: flex;
-  gap: 1rem;
-}
-
-.btn-explorar,
-.btn-como-llegar {
-  display: inline-block;
-  padding: 0.75rem 1.75rem;
-  border-radius: 2rem;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: opacity 0.2s;
-}
-
-.btn-explorar {
-  background: #e67e22;    /* naranja */
-  color: #fff;
-}
-
-.btn-como-llegar {
-  background: transparent;
-  border: 2px solid rgba(255,255,255,0.8);
-  color: #fff;
-}
-
-.btn-explorar:hover,
-.btn-como-llegar:hover {
-  opacity: 0.85;
-}
-
 
 .ToursDestacados {
   padding: 4rem 1rem;
@@ -146,16 +8,6 @@ body {
   text-align: center;
 }
 
-.carrusel {
-   padding: 4rem 1rem;
-   background: #ffffff; 
-   text-align: center;
-}
-.carrusel .subtitulo {
-  color: #464343;
-  margin-bottom: 2rem;
-  font-size: 1rem;
-}
 
 .ToursDestacados h2 {
   font-size: 2rem;
@@ -249,7 +101,7 @@ body {
   background: #ffffff;
   border-radius: 16px;
   padding: 24px;
-  text-align: justify;
+  text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   transition: transform .2s, box-shadow .2s;
 }
@@ -289,9 +141,7 @@ body {
   align-items: center;
   gap: 0.25rem;
 }
-.ToursDestacados {
-  background-color: #e8f4f8;
-}
+
 
 .ComoLlegar {
   background-color: #e8f4f8;
@@ -309,7 +159,7 @@ text-align: center;
   display:flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 60px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 .transporte-opciones {
@@ -506,6 +356,8 @@ text-align: center;
   color: #666666;
 }
 
+
+/* CARRUSEL EMMA */
 .carrusel {
   width: 90%;
   max-width: 900px;
@@ -531,7 +383,7 @@ text-align: center;
 
 .carrusel-container {
   position: relative;
-  width: 900px;
+  width: 500px;
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -539,20 +391,19 @@ text-align: center;
 
 .slides {
   display: flex;
-  width: 2700px;
+  width: 1500px;
   transition: transform 0.6s ease-in-out;
 }
 
 .slide {
-  width: 900px;
+  width: 500px;
   flex-shrink: 0;
   position: relative;
 }
 
 .slide img {
-  border-radius: 12px;
-  width: 900px;
-  height: 500px;
+  width: 500px;
+  height: 300px;
   display: block;
   object-fit: cover;
 }
@@ -587,7 +438,7 @@ input[type="radio"] {
   position: absolute;
   width: 100%;
   top: 0;
-  margin-right: 50px;
+  margin-right: 25px;
   margin-top: 10px;
   display: flex;
   justify-content: flex-end;
@@ -613,8 +464,9 @@ input[type="radio"] {
   transform: translateX(0px);
 }
 #slide2:checked ~ .slides {
-  transform: translateX(-900px);
+  transform: translateX(-500px);
 }
 #slide3:checked ~ .slides {
-  transform: translateX(-1800px);
+  transform: translateX(-1000px);
 }
+

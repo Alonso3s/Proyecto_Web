@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("../img/golfito.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+}
+
+
+
+  #menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+
+.item {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.item:hover {
+  text-decoration: underline;
+  color: #d0eaff;
+}
+
+/* Logo y sección principal */
+section {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+#logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+/* Cuadro de formulario */
+#login {
+  background: rgba(255, 255, 255, 0.50); /* Transparente */
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px); /* Para dar efecto de cristal */
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.cajatexto {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+.cajatexto::placeholder {
+  color: #555;
+}
+
+.cajatexto:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+.boton {
+  width: 100%;
+  padding: 12px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #003e80;
+}
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    padding: 0.5rem 1.25rem;
+    justify-content: flex-end
+  }
+
+#menu .item {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+#menu .itemx {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+/* Estilos específicos */
+#menu .item {
+  background: #000000;
+}
+#menu .itemx {
+  background: #1a1a8d;
+  color: #fff;
+}
+
+footer {
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  
+}
