@@ -1,63 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aventura - Golfito</title>
-  <link rel="stylesheet" href="css/estilos.css">
-  <link  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 <body>
- <nav class="navbar">
-    <h1>Golfito</h1>
-     <ul id="menu">
-                    <li><a href="indexgolfo.html" class="item">Inicio</a></li>
-                    <li><a href="contacto.html" class="item">Contacto</a></li>
-                    <li><a href="registrarse.html" class="itemx">Registrarse</a></li>
-                    <li><a href="iniciar_sesion.html" class="itemx">Iniciar Sesión</a></li>
-                </ul>
+
+  <!-- Navegación -->
+  <nav class="navbar">
+    <h1 style="color:#3400FF; margin-left: 2rem;">GOLFITO</h1>
+    <ul id="menu">
+      <li><a href="indexgolfo.html" class="item">Inicio</a></li>
+      <li><a href="contacto.html" class="item">Contacto</a></li>
+      <li><a href="registrarse.html" class="itemx">Registrarse</a></li>
+      <li><a href="iniciar_sesion.html" class="itemx">Iniciar Sesión</a></li>
+    </ul>
   </nav>
 
-  <header class="">
-    <div class="hero-content">
-      <i class="ri-landscape-line hero-icon"></i>
-      <h1>Aventura</h1>
-      <p>Vive experiencias emocionantes en el corazón de la naturaleza</p>
-    </div>
-  </header>
+  <!-- Hero Aventura -->
+  <section class="hero-aventura">
+    <h1>Aventura</h1>
+    <p>Vive experiencias emocionantes en el corazón de la naturaleza</p>
+  </section>
 
+  <!-- Descripción principal -->
   <section class="intro">
     <h2>Adrenalina en Estado Puro</h2>
     <p>
       Golfito ofrece aventuras para todos los niveles de experiencia. Desde emocionantes tours, hasta descensos en rappel,
-      cada actividad está diseñada para conectarte con la naturaleza de manera segura y emocionante. Nuestros guías garantizan
-      experiencias inolvidables mientras respetamos el medio ambiente.
+      cada actividad está diseñada para conectarte con la naturaleza de manera segura y emocionante.
+      Nuestros guías garantizan experiencias inolvidables mientras respetamos el medio ambiente.
     </p>
   </section>
 
-  <section class="activities">
-    <div class="activity-card">
-      <img src="canopy.jpg" alt="Canopy">
-      <span class="badge">Aventura</span>
-      <h3>Canopy</h3>
-    </div>
-    <div class="activity-card">
-      <img src="kayak.jpg" alt="Kayak en Manglares">
-      <span class="badge">Aventura</span>
-      <h3>Kayak en Manglares</h3>
-    </div>
-    <div class="activity-card">
-      <img src="cascadas.jpg" alt="Cascadas">
-      <span class="badge">Aventura</span>
-      <h3>Cascadas</h3>
-    </div>
-    <div class="activity-card">
-      <img src="pesca.jpg" alt="Pesca Deportiva">
-      <span class="badge">Aventura</span>
-      <h3>Pesca deportiva</h3>
+  <!-- Actividades destacadas -->
+  <section class="actividades">
+    <div class="grid-actividades">
+      <div class="card-act">
+        <div class="img-wrapper">
+          <img src="img/canopy.jpg" alt="Canopy" />
+          <span class="categoria aventura">Aventura</span>
+        </div>
+        <h3>Canopy</h3>
+      </div>
+
+      <div class="card-act">
+        <div class="img-wrapper">
+          <img src="img/kayak.jpg" alt="Kayak" />
+          <span class="categoria aventura">Aventura</span>
+        </div>
+        <h3>Kayak en Manglares</h3>
+      </div>
+
+      <div class="card-act">
+        <div class="img-wrapper">
+          <img src="img/cascadas.jpg" alt="Cascadas" />
+          <span class="categoria aventura">Aventura</span>
+        </div>
+        <h3>Cascadas</h3>
+      </div>
+
+      <div class="card-act">
+        <div class="img-wrapper">
+          <img src="img/pesca.jpg" alt="Pesca" />
+          <span class="categoria aventura">Aventura</span>
+        </div>
+        <h3>Pesca deportiva</h3>
+      </div>
     </div>
   </section>
 
-  
 </body>
 </html>
+<!-- Footer -->
+ <footer class="footer">
+   <div class="footer-contenido">
+    <div class="footer-logo">
+      <img src="img/logo.png" height="130" alt="Explora Golfo Dulce">
+    </div>
+    <div class="footer-nav">
+      <h4 class="grey">Navegación</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Actividades</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4 class="grey">Enlaces rápidos</h4>
+      <ul>
+        <li><a href="#">Atractivos</a></li>
+        <li><a href="#">Galería</a></li>
+      </ul>
+    </div>
+    <div class="footer-contacto">
+      <h4 class="grey">Contacto</h4>
+      <p><strong>123 Calle Principal</strong><br>Golfito, Costa Rica<br>+506 1234 5678</p>
+    </div>
+  </div>
+  <div class="footer-copy">
+    <p>© 2025 Explora Golfo Dulce. Todos los derechos reservados.</p>
+  </div> 
+</footer>

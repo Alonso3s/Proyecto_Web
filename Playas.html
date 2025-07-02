@@ -1,55 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Playas - Golfito</title>
-  <link  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/estilos.css" />
 </head>
-<body class="bg-white text-gray-800">
-  <!-- Header -->
-  <header class="flex justify-between items-center px-8 py-4">
-    <h1 class="text-2xl font-bold text-purple-700">GOLFITO</h1>
-    <nav class="space-x-4">
-      <a href="indexgolfo.html" class="bg-black text-white px-4 py-2 rounded-full">Inicio</a>
-      <a href="contacto.html" class="bg-black text-white px-4 py-2 rounded-full">Contacto</a>
-      <a href="registrarse.html" class="bg-purple-600 text-white px-4 py-2 rounded-full">Registrarse</a>
-      <a href="iniciar_sesion.html" class="bg-blue-600 text-white px-4 py-2 rounded-full">Iniciar Sesión</a>
-    </nav>
-  </header>
+<body>
 
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-blue-800 to-blue-500 text-center text-white py-12">
-    <div class="text-4xl mb-2">🌊</div>
-    <h2 class="text-3xl font-bold">Playas</h2>
-    <p class="text-lg mt-2 font-medium">Descubre las playas más hermosas del Pacífico Sur</p>
+  <!-- Navegación -->
+  <nav class="navbar">
+    <h1 style="color:#3400FF; margin-left: 2rem;">GOLFITO</h1>
+    <ul id="menu">
+      <li><a href="indexgolfo.html" class="item">Inicio</a></li>
+      <li><a href="contacto.html" class="item">Contacto</a></li>
+      <li><a href="registrarse.html" class="itemx">Registrarse</a></li>
+      <li><a href="iniciar_sesion.html" class="itemx">Iniciar Sesión</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero con fondo degradado -->
+  <section class="hero-playas">
+    <h1>Playas</h1>
+    <p>Descubre las playas más hermosas del Pacífico Sur</p>
   </section>
 
-  <!-- Description -->
-  <section class="text-center px-4 md:px-20 py-10">
-    <h3 class="text-3xl font-bold mb-4">Un paraíso Costero del Golfo Dulce</h3>
-    <p class="text-gray-600 text-lg font-semibold max-w-3xl mx-auto">
-      Las playas de Golfito ofrecen una diversidad única: desde extensas costas de arena perfectas para relajarse, hasta mundialmente famosos breaks de Surf. Cada playa tiene su propia personalidad, desde las tranquilas aguas familiares hasta las emocionantes olas para surfistas experimentados.
+  <!-- Introducción -->
+  <section class="intro">
+    <h2>Un paraíso costero del Golfo Dulce</h2>
+    <p>
+      Las playas de Golfito ofrecen una diversidad única: desde extensas costas de arena perfectas para relajarse,
+      hasta mundialmente famosos breaks de surf. Cada playa tiene su propia personalidad, desde las tranquilas aguas
+      familiares hasta las emocionantes olas para surfistas experimentados.
     </p>
   </section>
 
-  <!-- Destacadas -->
-  <section class="text-center pb-16">
-    <h4 class="text-2xl font-bold mb-8">Playas más destacadas</h4>
-    <div class="flex flex-col md:flex-row justify-center gap-8 px-4">
-      <!-- Playa Zancudo -->
-      <div class="flex flex-col items-center max-w-sm">
-        <img src="https://via.placeholder.com/300x180?text=Zancudo" alt="Playa Zancudo" class="rounded-xl mb-4">
-        <h5 class="font-bold text-lg">Playa Zancudo</h5>
-        <p class="text-sm text-gray-600">Relájate en una de las playas más hermosas de Golfito</p>
+  <!-- Sección de Tarjetas -->
+  <section class="categorias">
+    <div class="cards">
+      <div class="card act">
+        <span class="categoria playa">Playa Zancudo</span>
+        <img src="img/zancudo.jpg" class="card-icon" alt="Playa Zancudo">
+        <h3>Relajación y Naturaleza</h3>
+        <p>Relájate en una de las playas más hermosas de Golfito.</p>
       </div>
-      <!-- Playa Pavones -->
-      <div class="flex flex-col items-center max-w-sm">
-        <img src="https://via.placeholder.com/300x180?text=Pavones" alt="Playa Pavones" class="rounded-xl mb-4">
-        <h5 class="font-bold text-lg">Playa Pavones</h5>
-        <p class="text-sm text-gray-600">Es caracterizada por tener la segunda ola izquierda más larga del mundo.</p>
+      <div class="card act">
+        <span class="categoria playa">Playa Pavones</span>
+        <img src="img/pavones.jpg" class="card-icon" alt="Playa Pavones">
+        <h3>Surf Internacional</h3>
+        <p>Cuenta con la segunda ola izquierda más larga del mundo.</p>
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-logo">
+        <img src="img/logo.png" height="130" alt="Explora Golfo Dulce">
+      </div>
+      <div class="footer-nav">
+        <h4 class="grey">Navegación</h4>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Actividades</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4 class="grey">Enlaces rápidos</h4>
+        <ul>
+          <li><a href="#">Atractivos</a></li>
+          <li><a href="#">Galería</a></li>
+        </ul>
+      </div>
+      <div class="footer-contacto">
+        <h4 class="grey">Contacto</h4>
+        <p><strong>123 Calle Principal</strong><br>Golfito, Costa Rica<br>+506 1234 5678</p>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>© 2025 Explora Golfo Dulce. Todos los derechos reservados.</p>
+    </div> 
+  </footer>
+
 </body>
 </html>
+
