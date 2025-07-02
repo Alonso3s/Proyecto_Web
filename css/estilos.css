@@ -626,7 +626,7 @@ input[type="radio"] {
   transform: translateX(-900px);
 }
 #slide3:checked ~ .slides {
-  transform: translateX(-1800px);
+  transform: translateX(-1800px);}
 /* Contacto */
 #contacto {
   background-color: #fff;
