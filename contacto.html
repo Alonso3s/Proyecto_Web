@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/estilos.css">
   <link  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -46,11 +47,14 @@
     <p>© 2025 Turismo Golfito</p>
   </footer>
 
-  <script>
-    // Inicializa EmailJS con tu PUBLIC KEY (no la private)
-    emailjs.init("_txcPqjRuvd89pBMi");
+  <!-- Script de envío con EmailJS -->
+  <script type="text/javascript">
+    // Inicialización de EmailJS
+    (function () {
+      emailjs.init("_txcPqjRuvd89pBMi");
+    })();
 
-    // Lógica de envío del formulario
+    // Envío del formulario
     document.getElementById("formContacto").addEventListener("submit", function (e) {
       e.preventDefault();
 
@@ -60,7 +64,6 @@
       const mensaje = document.getElementById("mensaje").value.trim();
       const estado = document.getElementById("mensajeEstado");
 
-      // Validación simple
       if (!nombre || !correo || !asunto || !mensaje) {
         estado.textContent = "Por favor, completa todos los campos.";
         estado.style.color = "red";
@@ -73,8 +76,7 @@
         return;
       }
 
-      // Enviar con EmailJS
-      emailjs.send("service_35i42uu", "template_f6gd97o", {
+      emailjs.send("service_focus", "template_focus", {
         from_name: nombre,
         from_email: correo,
         subject: asunto,
@@ -88,7 +90,6 @@
             estado.textContent = "";
           }, 5000);
         })
-
         .catch((error) => {
           estado.textContent = "Error al enviar. Intenta nuevamente.";
           estado.style.color = "red";
