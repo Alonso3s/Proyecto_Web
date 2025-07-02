@@ -231,6 +231,9 @@
 .ToursDestacados .categoria.playas      { 
     background: #3498db;
 }
+.ToursDestacados .categoria.historia      { 
+    background: rgb(168, 84, 247);
+}
 
 /* Hacer que todo el <a> ocupe la tarjeta y herede estilos */
 .card-link {

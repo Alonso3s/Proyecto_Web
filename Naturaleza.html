@@ -4,13 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Naturaleza - Golfito</title>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/estilos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 <body>
 
   <!-- Navegación -->
   <nav class="navbar">
-    <h1 style="color:#3400FF; margin-left: 2rem;">GOLFITO</h1>
+    <h1 style="color:#3400FF; margin-left: 2rem;font-family: 'Poppins', sans-serif;">GOLFITO</h1>
     <ul id="menu">
       <li><a href="indexgolfo.html" class="item">Inicio</a></li>
       <li><a href="contacto.html" class="item">Contacto</a></li>
@@ -34,43 +36,49 @@
     </p>
   </section>
 
-  <!-- Sección de Tarjetas -->
-  <section class="categorias">
-    <div class="cards">
-      <a href="#" class="card-link">
-        <div class="card act">
-          <span class="categoria naturaleza">Naturaleza</span>
-          <img src="img/ballena.jpg" class="card-icon" alt="Ballena">
-          <h3>Ballena jorobada</h3>
-          <p>Migran al Golfo Dulce entre julio y noviembre.</p>
-        </div>
-      </a>
-      <a href="#" class="card-link">
-        <div class="card act">
-          <span class="categoria naturaleza">Naturaleza</span>
-          <img src="img/orquideas.jpg" class="card-icon" alt="Orquídeas">
-          <h3>Orquídeas</h3>
-          <p>Más de 1,400 especies diferentes en la zona.</p>
-        </div>
-      </a>
-      <a href="#" class="card-link">
-        <div class="card act">
-          <span class="categoria naturaleza">Naturaleza</span>
-          <img src="img/quetzal.jpg" class="card-icon" alt="Quetzal">
-          <h3>Quetzal</h3>
-          <p>Ave sagrada de los mayas que habita los bosques nubosos.</p>
-        </div>
-      </a>
-      <a href="#" class="card-link">
-        <div class="card act">
-          <span class="categoria naturaleza">Naturaleza</span>
-          <img src="img/mono.jpg" class="card-icon" alt="Mono Ardilla">
-          <h3>Mono ardilla</h3>
-          <p>Especie endémica del Pacífico sur costarricense.</p>
-        </div>
-      </a>
+<!-- Naturaleza destacada -->
+<section class="actividades">
+  <div class="grid-actividades">
+
+    <div class="card-act">
+      <div class="img-wrapper">
+        <img src="img/ballena.jpg" alt="Ballena jorobada" />
+        <span class="categoria naturaleza">Naturaleza</span>
+      </div>
+      <h3>Ballena jorobada</h3>
+      <p>Migran al Golfo Dulce entre julio y noviembre.</p>
     </div>
-  </section>
+
+    <div class="card-act">
+      <div class="img-wrapper">
+        <img src="img/orquideas.jpg" alt="Orquídeas" />
+        <span class="categoria naturaleza">Naturaleza</span>
+      </div>
+      <h3>Orquídeas</h3>
+      <p>Más de 1,400 especies diferentes en la zona.</p>
+    </div>
+
+    <div class="card-act">
+      <div class="img-wrapper">
+        <img src="img/quetzal.jpg" alt="Quetzal" />
+        <span class="categoria naturaleza">Naturaleza</span>
+      </div>
+      <h3>Quetzal</h3>
+      <p>Ave sagrada de los mayas que habita los bosques nubosos.</p>
+    </div>
+
+    <div class="card-act">
+      <div class="img-wrapper">
+        <img src="img/mono.avif" alt="Mono ardilla" />
+        <span class="categoria naturaleza">Naturaleza</span>
+      </div>
+      <h3>Mono ardilla</h3>
+      <p>Especie endémica del Pacífico sur costarricense.</p>
+    </div>
+
+  </div>
+</section>
+
 
 </body>
 </html>
