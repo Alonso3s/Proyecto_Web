@@ -1,86 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Historia - Golfito</title>
-  <link  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/estilos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naturaleza - Golfito</title>
+  <link rel="stylesheet" href="css/estilos.css" />
 </head>
 <body>
 
-  <!-- Encabezado -->
-  <header>
-  
+  <!-- Navegación -->
   <nav class="navbar">
+
     <h1>Golfito</h1>
      <ul id="menu">
                     <li><a href="indexgolfo.html" class="item">Inicio</a></li>
                     <li><a href="contacto.html" class="item">Contacto</a></li>
                     <li><a href="Login.html" class="item">Cerrar Sesión</a></li>
                 </ul>
+
   </nav>
-  </header>
+<!-- Hero con fondo degradado -->
+<section class="hero-historia">
+  <h1>Historia</h1>
+  <p>Recorre los acontecimientos que marcaron la región de Golfito</p>
+</section>
 
-  <!-- Sección de Historia -->
-  <section>
-    <div>
-      <p>[🗓]</p> <!-- Icono de calendario, puede ser reemplazado por SVG -->
-      <h2>Historia</h2>
-      <p>Descubre el rico patrimonio cultural del Golfo Dulce</p>
+<!-- Introducción -->
+<section class="intro">
+  <h2>Miles de Años de Historia</h2>
+  <p>
+    La región de Golfito es un tesoro histórico que abarca desde las antiguas culturas precolombinas hasta la era moderna. 
+    Desde las misteriosas esferas de piedra de los Diquís hasta el legado del puerto bananero, 
+    cada rincón cuenta una historia fascinante de civilizaciones, comercio y conservación.
+  </p>
+</section>
+
+<!-- Sección de Tarjetas Históricas -->
+<section class="categorias">
+  <div class="cards">
+    <div class="card act">
+      <span class="categoria historia">Cultura Diquís</span>
+      <img src="img/culturaDiquiz.jpg" class="card-icon" alt="Cultura Diquís">
+      <h3>300–1500 D.C.</h3>
+      <p>Florecimiento de la cultura que creó las famosas esferas de piedra.</p>
     </div>
-  </section>
 
-  <!-- Introducción -->
-  <section>
-    <h3>Miles de Años de Historia</h3>
-    <p>
-      La región de Golfito es un tesoro histórico que abarca desde las antiguas culturas precolombinas hasta la era moderna. 
-      Desde las misteriosas esferas de piedra de los Diquís hasta el legado del puerto bananero, 
-      cada rincón cuenta una historia fascinante de civilizaciones, comercio y conservación.
-    </p>
-  </section>
-
-  <!-- Línea de tiempo histórica -->
-  <section>
-    <h4>Línea de tiempo Histórica</h4>
-
-    <div>
-      <!-- Evento 1 -->
-      <div>
-        <img src="https://via.placeholder.com/150x100?text=Cultura+Diquís" alt="Cultura Diquís">
-        <h5>Cultura Diquís<br>300–1500 D.C.</h5>
-        <p>Florecimiento de la cultura que creó las famosas esferas de piedra</p>
-      </div>
-
-      <!-- Evento 2 -->
-      <div>
-        <img src="https://via.placeholder.com/150x100?text=Llegada+Española" alt="Llegada Española">
-        <h5>Llegada Española<br>1519</h5>
-        <p>Primeros exploradores españoles llegan al Golfo Dulce</p>
-      </div>
-
-      <!-- Evento 3 -->
-      <div>
-        <img src="https://via.placeholder.com/150x100?text=Puerto+Bananero" alt="Puerto Bananero">
-        <h5>Puerto Bananero<br>1938</h5>
-        <p>United Fruit Company establece el puerto de Golfito</p>
-      </div>
-
-      <!-- Evento 4 -->
-      <div>
-        <img src="https://via.placeholder.com/150x100?text=Parque+Nacional" alt="Parque Nacional">
-        <h5>Parque Nacional<br>1975</h5>
-        <p>Creación del Parque Nacional Corcovado</p>
-      </div>
-
-      <!-- Evento 5 -->
-      <div>
-        <img src="https://via.placeholder.com/150x100?text=UNESCO+2014" alt="UNESCO 2014">
-        <h5>Patrimonio UNESCO<br>2014</h5>
-        <p>Las esferas de piedra son declaradas Patrimonio Mundial</p>
-      </div>
+    <div class="card act">
+      <span class="categoria historia">Llegada Española</span>
+      <img src="llegadaEspanola" class="card-icon" alt="Llegada Española">
+      <h3>1519</h3>
+      <p>Primeros exploradores españoles llegan al Golfo Dulce.</p>
     </div>
-  </section>
+
+    <div class="card act">
+      <span class="categoria historia">Puerto Bananero</span>
+      <img src="img/puertoBananero.jpg" class="card-icon" alt="Puerto Bananero">
+      <h3>1938</h3>
+      <p>United Fruit Company establece el puerto de Golfito.</p>
+    </div>
+
+    <div class="card act">
+      <span class="categoria historia">Parque Nacional</span>
+      <img src="img/parqueNacional.jpg" class="card-icon" alt="Parque Nacional">
+      <h3>1975</h3>
+      <p>Creación del Parque Nacional Corcovado.</p>
+    </div>
+
+    <div class="card act">
+      <span class="categoria historia">UNESCO</span>
+      <img src="img/unesco.jpg" class="card-icon" alt="UNESCO 2014">
+      <h3>2014</h3>
+      <p>Las esferas de piedra son declaradas Patrimonio Mundial.</p>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
+<!-- Footer -->
+ <footer class="footer">
+   <div class="footer-contenido">
+    <div class="footer-logo">
+      <img src="img/logo.png" height="130" alt="Explora Golfo Dulce">
+    </div>
+    <div class="footer-nav">
+      <h4 class="grey">Navegación</h4>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Actividades</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4 class="grey">Enlaces rápidos</h4>
+      <ul>
+        <li><a href="#">Atractivos</a></li>
+        <li><a href="#">Galería</a></li>
+      </ul>
+    </div>
+    <div class="footer-contacto">
+      <h4 class="grey">Contacto</h4>
+      <p><strong>123 Calle Principal</strong><br>Golfito, Costa Rica<br>+506 1234 5678</p>
+    </div>
+  </div>
+  <div class="footer-copy">
+    <p>© 2025 Explora Golfo Dulce. Todos los derechos reservados.</p>
+  </div> 
+</footer>
