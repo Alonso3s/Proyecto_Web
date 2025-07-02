@@ -5,23 +5,22 @@
         <meta charset="UTF-8">
         <!--fuente del FIGMA-->
          <link  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> <!--importado -> como_llega.html-->
+         <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> <!--importado -> como_llegar.html-->
          <link rel="stylesheet" type="text/css" href="css/estilos.css">
     </head>
 
     <body>
         <header>
             <nav>
-                <div class="logo">
-                    <!--Aquí hay que poner el logo-->
-                    <h1>GOLFITO</h1>
+                <div class="hero-banner-fondo">
+                   <h1>GOLFITO</h1>
                 </div>
                 <!-- Barra de navegación-->
-                <ul id='menu'>
-                    <li><a href="" class='item'>Inicio</a></li>
-                    <li><a href="" class='item'>Contacto</a></li>
-                    <li><a href="" class='item'>Registrarse</a></li>
-                    <li><a href="" class='item'>Iniciar Sesión</a></li>
+                <ul id="menu">
+                    <li><a href="indexgolfo.html" class="item">Inicio</a></li>
+                    <li><a href="contacto.html" class="item">Contacto</a></li>
+                    <li><a href="registrarse.html" class="itemx">Registrarse</a></li>
+                    <li><a href="iniciar_sesion.html" class="itemx">Iniciar Sesión</a></li>
                 </ul>
             </nav>
         </header>
@@ -32,57 +31,64 @@
                 <p>El paraíso natural del Golfo Dulce te espera con aventuras inolvidables</p>
 
                 <div class="OpcionesHero">
-                    <a href="" class="btn-explorar"> Explorar Tours</a>
-                    <a href="" class="btn-como-llegar"> Cómo Llegar</a>
-                </div>
-                
-                <div class="categorias">
-  <h2>Actividades por Categoría</h2>
-  <p class="subtitulo">
-    Explora las diferentes experiencias que Golfito tiene para ofrecerte
-  </p>
-  <div class="cards">
-    <a href="Naturaleza.html" class="card-link">
-      <article class="card">
-        <img src="" alt="Icono Naturaleza" class="card-icon">
-        <h3>Naturaleza</h3>
-        <p>Explora la biodiversidad única del Golfo Dulce</p>
-      </article>
-    </a>
-
-    <a href="Aventura.html" class="card-link">
-      <article class="card">
-        <img src="" alt="Icono Aventura" class="card-icon">
-        <h3>Aventura</h3>
-        <p>Vive experiencias emocionantes en la naturaleza</p>
-      </article>
-    </a>
-
-    <a href="Playas.html" class="card-link">
-      <article class="card">
-        <img src="" alt="Icono Playas" class="card-icon">
-        <h3>Playas</h3>
-        <p>Descubre las mejores playas de Golfito</p>
-      </article>
-    </a>
-
-    <a href="Historia.html" class="card-link">
-      <article class="card">
-        <img src="" alt="Icono Historia" class="card-icon">
-        <h3>Historia</h3>
-        <p>Conoce la historia y la cultura local</p>
-      </article>
-    </a>
-  </div>
-</div>
-
-                <div id ="contenido">
-                    <!--Emma aquí implementas el Carrusel de imágenes-->
+                    <a href="#ToursDestacados" class="btn-explorar"> Explorar Tours</a>
+                    <a href="#ComoLlegar" class="btn-como-llegar"> Cómo Llegar</a>
                 </div>
         </section>
 
-        <section class="ToursDestacados">
-            <h2>Tours Destacados</h2>
+<section>
+  <div class="categorias">
+    <h2>Actividades por Categoría</h2>
+    <p class="subtitulo">
+      Explora las diferentes experiencias que Golfito tiene para ofrecerte
+    </p>
+
+    <div class="cards">
+      <a href="Naturaleza.html" class="card-link">
+        <article class="card">
+          <img src="/img/naturalezaicon.png" alt="Icono Naturaleza" class="card-icon">
+          <h3>Naturaleza</h3>
+          <p>Explora la biodiversidad única del Golfo Dulce</p>
+        </article>
+      </a>
+
+      <a href="Aventura.html" class="card-link">
+        <article class="card">
+          <img src="/img/aventuraicon.png" alt="Icono Aventura" class="card-icon">
+          <h3>Aventura</h3>
+          <p>Vive experiencias emocionantes a lo natural</p>
+        </article>
+      </a>
+
+      <a href="Playas.html" class="card-link">
+        <article class="card">
+          <img src="/img/playaicon.png" alt="Icono Playas" class="card-icon">
+          <h3>Playas</h3>
+          <p>Descubre las mejores playas de Golfito</p>
+        </article>
+      </a>
+
+      <a href="Historia.html" class="card-link">
+        <article class="card">
+          <img src="/img/historiaicon.png" alt="Icono Historia" class="card-icon">
+          <h3>Historia</h3>
+          <p>Conoce la historia y la cultura local</p>
+        </article>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="carrusel">
+    <h1>Imagenes Destacadas</h1>
+    <p class="subtitulo">
+      Aquí falta el subtítulo y falta el carrusel de imágenes❕❕
+    </p>
+</section>
+
+        <section class="ToursDestacados" id="ToursDestacados">
+            <h1>Tours Destacados</h1>
             <p class="subtitulo">
                 Descubre la belleza natural de Golfito
             </p> 
@@ -243,7 +249,7 @@
             </div>
         </section>
 
-        <section class="ComoLlegar">
+        <section class="ComoLlegar" id="ComoLlegar">
   <h1>Cómo llegar</h1>
   <p>Encuentra la mejor ruta para llegar a Golfito y comenzar tu aventura</p>
 
