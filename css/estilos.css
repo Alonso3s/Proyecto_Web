@@ -59,6 +59,8 @@ body {
   justify-content:right
 }
 
+
+
 #menu .item {
   display: inline-block;
   padding: 0.5rem 1.25rem;
@@ -79,7 +81,7 @@ body {
   border-radius: 1.5rem;
   font-weight: 500;
   text-decoration: none;
-  background: url("../img/banner.jpg") no-repeat center/cover;
+ 
   color: #fff;
 } 
 #menu .item-naturaleza {
@@ -590,151 +592,6 @@ text-align: center;
   color: #666666;
 }
 
-/* Carrusel */
-/* Estilos del carrusel */
-
-.carrusel {
-  width: 90%;
-  max-width: 900px;
-  margin: 40px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: sans-serif;
-  background: rgb(233, 244, 247);
-}
-
-.carrusel h2 {
-  font-size: 2em;
-  margin-bottom: 0.2em;
-}
-
-.carrusel .subtitulo {
-  font-size: 1.2em;
-  color: #555;
-  margin-bottom: 1em;
-}
-
-.carrusel-container {
-  position: relative;
-  width: 900px;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.slides {
-  display: flex;
-  width: 2700px;
-  transition: transform 0.6s ease-in-out;
-}
-
-.slide {
-  width: 900px;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.slide img {
-  border-radius: 12px;
-  width: 900px;
-  height: 500px;
-  display: block;
-  object-fit: cover;
-}
-
-.texto-slide {
-  position: absolute;
-  bottom: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
-  color: white;
-  width: 100%;
-  padding: 1em;
-  text-align: left;
-}
-
-.texto-slide h3 {
-  margin: 0;
-  font-size: 1.4em;
-}
-
-.texto-slide p {
-  margin: 0.2em 0 0;
-  font-size: 1em;
-}
-.img-wrapper {
-  position: relative;
-}
-
-.img-wrapper img {
-  width: 100%;
-  display: block;
-  border-bottom: 1px solid #eee;
-  border-radius: 12px;
-}
-
-/* Botón sobre la imagen */
-.btn-img {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  background-color: rgba(0, 0, 0, 0.6); /* fondo semitransparente */
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.btn-img:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-/* Oculta los radio buttons */
-input[type="radio"] {
-  display: none;
-}
-
-/* Posicionar manual buttons */
-.navegacion-manual {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  margin-right: 50px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 12px;
-}
-
-.manual-btn {
-  width: 14px;
-  height: 14px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  background: transparent;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.manual-btn:hover {
-  background: #fff;
-}
-
-/* Mostrar el slide correspondiente */
-#slide1:checked ~ .slides {
-  transform: translateX(0px);
-}
-#slide2:checked ~ .slides {
-  transform: translateX(-900px);
-}
-#slide3:checked ~ .slides {
-  transform: translateX(-1800px);}
 /* Contacto */
 #contacto {
   background-color: #fff;
@@ -1143,5 +1000,89 @@ input[type="radio"] {
   height: 50px;
   width: 50px;
 }
+#cerrarSesion{
+  display: flex;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/logout.svg");
+  background-repeat: no-repeat;
+  margin-inline: 20px;
+  background-position: center;
+  background-size: contain;
+}
 
+#cerrarSesion:hover{
+  scale: 1.1;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.carousel {
+  position: relative;
+  max-width: 700px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide img {
+  width: 100%;
+  height: 350px;
+  display: block;
+}
+
+.texto-slide {
+  padding: 15px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.texto-slide h3 {
+  margin: 5px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.texto-slide p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.controls button {
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
 
