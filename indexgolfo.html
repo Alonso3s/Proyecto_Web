@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <!--importado -> como_llegar.html-->
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   
   </head>
 
   <body>
@@ -28,6 +30,9 @@
           <li><a href="Historia.html" class="item-historia">Historia</a></li>
           <li><a href="#carrusel" class="item-galeria">Galería</a></li>
           <li><a href="contacto.html" class="item-contacto">Contactenos</a></li>
+          <li><a href="#" id="cerrarSesion" title="Cerrar sesión"></a></li>
+          
+
         </ul>
       </nav>
     </header>
@@ -319,47 +324,36 @@
       </div>
     </section>
     
-    <section class="carrusel" id="carrusel">
-      <h2>Imágenes Destacadas</h2>
-      <p class="subtitulo">Descubre la belleza natural de Golfito</p>
-
-      <div class="carrusel-container">
-        <input type="radio" name="slider" id="slide1" checked />
-        <input type="radio" name="slider" id="slide2" />
-        <input type="radio" name="slider" id="slide3" />
-
-        <div class="slides">
-          <div class="slide s1">
-            <img src="img/Ballenas.jpg" alt="Avistamiento de ballenas" />
-            <div class="texto-slide">
-              <h3>Avistamiento de ballenas</h3>
-              <p>Observa ballenas jorobadas en su migración anual</p>
-            </div>
-          </div>
-          <div class="slide s2">
-            <img src="img/playa.jpg" alt="Playa Pavones" />
-            <div class="texto-slide">
-              <h3>Playa Pavones</h3>
-              <p>Perfecta para surfear, es la segunda más larga del mundo</p>
-            </div>
-          </div>
-          <div class="slide s3">
-            <img src="img/cascada.jpg" alt="Cascadas escondidas" />
-            <div class="texto-slide">
-              <h3>Cascadas escondidas</h3>
-              <p>Explora senderos hasta cascadas impresionantes</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Navegación manual -->
-        <div class="navegacion-manual">
-          <label for="slide1" class="manual-btn"></label>
-          <label for="slide2" class="manual-btn"></label>
-          <label for="slide3" class="manual-btn"></label>
+      <div class="carousel">
+    <div class="slides" id="slideContainer">
+      <div class="slide">
+        <img src="img/Ballenas.jpg" alt="Avistamiento de ballenas" />
+        <div class="texto-slide">
+          <h3>Avistamiento de ballenas</h3>
+          <p>Observa ballenas jorobadas en su migración anual</p>
         </div>
       </div>
-    </section>
+      <div class="slide">
+        <img src="img/playa.jpg" alt="Playa Pavones" />
+        <div class="texto-slide">
+          <h3>Playa Pavones</h3>
+          <p>Perfecta para surfear, es la segunda más larga del mundo</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/cascada.jpg" alt="Cascadas escondidas" />
+        <div class="texto-slide">
+          <h3>Cascadas escondidas</h3>
+          <p>Explora senderos hasta cascadas impresionantes</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="prevBtn">&#10094;</button>
+      <button id="nextBtn">&#10095;</button>
+    </div>
+  </div>
 
     <section class="ComoLlegar" id="ComoLlegar">
       <h1>Cómo llegar</h1>
@@ -467,6 +461,9 @@
         .addTo(mapa)
         .bindPopup("Golfito, Puntarenas")
         .openPopup();
+
     </script>
+    <script src="js/logout.js"></script>
+     <script src="js/script.js"></script>
   </body>
 </html>
