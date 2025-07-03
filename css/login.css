@@ -143,3 +143,32 @@ footer {
   bottom: 0;
   width: 100%;
 }
+#menu .item-playas {
+      display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: linear-gradient(135deg, #0077be, #00aaff);
+  color: white;
+}
+
+#menu .item-contacto {
+      display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  
+  background: linear-gradient(135deg, #00A89D,#0077be);
+  color: #fff;
+}
+.hero-banner-fondo h1 {
+  position: absolute;
+  top: 25%; left: 50%;
+  transform: translate(-56%, -250%);
+  color: #fff;
+  font-size: 3rem;
+  margin-left: 20px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
