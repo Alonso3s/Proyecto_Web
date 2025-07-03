@@ -18,6 +18,7 @@
 body {
   width: 100vw;
   overflow-x: hidden;
+  background:rgb(233, 244, 247); /* Fondo general */
 }
 
 .hero-banner-fondo h1 {
@@ -58,6 +59,75 @@ body {
   font-weight: 500;
   text-decoration: none;
 }
+#menu .item-index {
+      display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: url("../img/banner.jpg") no-repeat center/cover;
+  color: #fff;
+} 
+#menu .item-naturaleza {
+      display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: linear-gradient(90deg, #0c2e6a 0%, #2d6a4f 100%);
+  color: #fff;
+}
+#menu .item-playas {
+      display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: linear-gradient(135deg, #0077be, #00aaff);
+  color: white;
+}
+#menu .item-historia {
+      display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: linear-gradient(135deg, #8e44ad, #c0392b);
+  color: white;
+}
+#menu .item-galeria {
+      display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+   background: linear-gradient(135deg, #c0392b, #8e44ad);
+  color: #fff;
+}
+#menu .item-contacto {
+      display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  
+  background: linear-gradient(135deg, #00A89D,#0077be);
+  color: #fff;
+}
+#menu .item-aventura {
+      display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: linear-gradient(135deg, #6b1e0f, #d35400);
+  color: #fff;
+}
+#menu .item:hover,
+#menu .itemx:hover {
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
 /* Estilos específicos */
 #menu .item{
   background: #000000;
@@ -84,7 +154,7 @@ body {
   /* desvanecido de background */
   background: linear-gradient(90deg, #0c2e6a 0%, #2d6a4f 100%);
   width: 100vw;
-  height: 100vh;
+  height: 62vh;
   color: #fff;
   padding: 0 1rem;
 }
@@ -227,18 +297,7 @@ body {
   text-transform: uppercase;
 }
 
-.ToursDestacados .categoria.naturaleza  {
-    background: #27ae60; 
-}
-.ToursDestacados .categoria.aventura    { 
-    background: #e67e22; 
-}
-.ToursDestacados .categoria.playas      { 
-    background: #3498db;
-}
-.ToursDestacados .categoria.historia      { 
-    background: rgb(168, 84, 247);
-}
+
 
 /* Hacer que todo el <a> ocupe la tarjeta y herede estilos */
 .card-link {
@@ -406,7 +465,9 @@ text-align: center;
 }
 
 .footer-logo img {
-  width: 150px;
+  width: 200px;
+  height: auto;
+  
 }
 
 .footer-nav,
@@ -515,6 +576,8 @@ text-align: center;
   color: #666666;
 }
 
+/* Carrusel */
+/* Estilos del carrusel */
 
 .carrusel {
   width: 90%;
@@ -526,6 +589,7 @@ text-align: center;
   align-items: center;
   text-align: center;
   font-family: sans-serif;
+  background: rgb(233, 244, 247);
 }
 
 .carrusel h2 {
@@ -586,6 +650,36 @@ text-align: center;
   margin: 0.2em 0 0;
   font-size: 1em;
 }
+.img-wrapper {
+  position: relative;
+}
+
+.img-wrapper img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #eee;
+  border-radius: 12px;
+}
+
+/* Botón sobre la imagen */
+.btn-img {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: rgba(0, 0, 0, 0.6); /* fondo semitransparente */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-img:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 
 /* Oculta los radio buttons */
 input[type="radio"] {
@@ -995,10 +1089,7 @@ input[type="radio"] {
   color: white;
 }
 
-/* Colores de categoría */
-.categoria.historia {
-  background-color: #c0392b;
-}
+
 /* HERO para sección Playas */
 .hero-playas {
   background: linear-gradient(135deg, #0077be, #00aaff);
@@ -1016,7 +1107,27 @@ input[type="radio"] {
   font-size: 20px;
 }
 
-/* Categoría específica para Playas */
-.categoria.playa {
-  background-color: #0077be;
+/* Colores de categoría */
+.categoria.historia {
+  background: url("../img/historiaicon.png") no-repeat center/cover;
+  height: 50px;
+  width: 50px;
+
 }
+.categoria.naturaleza {
+  background: url("../img/naturalezaicon.png") no-repeat center/cover;
+  height: 50px;
+  width: 50px;
+}
+.categoria.aventura {
+  background: url("../img/aventuraicon.png") no-repeat center/cover;
+  height: 50px;
+  width: 50px;
+}
+.categoria.playa {
+  background: url("../img/playaicon.png") no-repeat center/cover;
+  height: 50px;
+  width: 50px;
+}
+
+
